@@ -13,7 +13,10 @@ void getMaxSpeedCount(){
         speeds.push_back(tmp);
     }
     ll count=1;
-    if(n==1) cout<<count<<"\n";
+    if(n==1){
+      cout<<count<<"\n";
+      return;
+    } 
     for(ll i=1;i<n;i++){
         if(speeds[i]>speeds[i-1]){
             speeds[i]=speeds[i-1];
